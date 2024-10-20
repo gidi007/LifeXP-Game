@@ -37,6 +37,11 @@ export const formatDate = (date) => {
    * @param {number} max - Maximum value (inclusive).
    * @returns {number} - Random integer.
    */
+
+  export function cn(...classes) {
+    return classes.filter(Boolean).join(' ');
+  }
+  
   export const getRandomInt = (min, max) =>
     Math.floor(Math.random() * (max - min + 1)) + min;
   
